@@ -21,6 +21,10 @@
 \newtcolorbox{callout}[1][]{breakable,sharp corners, skin=enhancedmiddle jigsaw,parbox=false,
 boxrule=0mm,leftrule=1mm,boxsep=0mm,arc=0mm,outer arc=0mm}
 
+\titlespacing\section{0pt}{2pt plus 0pt minus 0pt}{0pt plus 0pt minus 0pt}
+\titlespacing\subsection{0pt}{2pt plus 0pt minus 0pt}{0pt plus 0pt minus 0pt}
+\titlespacing\subsubsection{0pt}{2pt plus 0pt minus 0pt}{0pt plus 0pt minus 0pt}
+
 % Add these lines to create and style the column separators
 \setlength{\columnseprule}{0.4pt} % Width of the rule
 \setlength{\columnsep}{20pt} % Space between columns
@@ -30,8 +34,9 @@ boxrule=0mm,leftrule=1mm,boxsep=0mm,arc=0mm,outer arc=0mm}
 % \setlength\extrarowheight{5pt} % table row height
 \renewcommand{\arraystretch}{1.5}
 % \centering
-% \titleformat*{\section}{\normalsize\bfseries}
-% \titleformat*{\subsection}{\small\bfseries}
+\titleformat*{\section}{\normalsize\bfseries}
+\titleformat*{\subsection}{\small\bfseries}
+\titleformat*{\subsubsection}{\small\bfseries}
 
 \begin{document}
 %\footnotesize
